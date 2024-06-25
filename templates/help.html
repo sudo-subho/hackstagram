@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.png" rel="icon" type="image/png">
+    <title>Help -Hackstagram</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+            <form action="{% url 'search' %}" method="POST">
+            {% csrf_token %}
+            <header style="margin-top: -2px; background-color: rgb(41, 37, 37); ">
+                <div class="header_inner">
+                    <div class="left-side">
+                        
+                            
+                        <input type="text" name="search_username" placeholder="Search for username.." style="background-color: rgb(72, 67, 67); color: white; ">&nbsp; &nbsp;
+                        <button type="submit"><i class="fa fa-search fa-1x" style="color: rgb(34, 182, 34);"></i></button>
+                            
+
+                    </div>
+
+                    <div class="right-side lg:pr-4" style="background-color: rgb(41, 37, 37);">
+                        <div class="max-w-6xl mx-auto">
+            
+            
+                            <div class="flex items-center lg:justify-between justify-around">
+            
+                                <a href="{% url 'home' %}">
+                                   <b><h1 style="font-size: 1.5rem; color: rgb(34, 182, 34);"><i class="fa-brands fa-hackerrank"></i>Hackstagram</h1></b>
+                                </a>
+            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side lg:pr-4">
+                        <!-- welcome user -->
+                        <a href="#" class="">
+                            Welcome <b name="" class="" style="color: rgb(34, 182, 34);" >{{user.username}}&nbsp; &nbsp; &nbsp;</b>
+                        </a>
+
+                        <a href="">
+                            <img src="{{ user_profile.profile_img.url }}" class="header-avatar" alt="" style="border: 3px solid rgb(34, 182, 34);">
+                        </a>
+                        <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t" style="background-color: rgb(41, 37, 37);border: 2px solid rgb(34, 182, 34); color: rgb(34, 182, 34);">
+                            <ul>
+                                <li><a href="/account_settings" style="color: rgb(34, 182, 34);" > Account setting </a> </li>
+                                <li><a href="/explore" style="color: rgb(34, 182, 34);" >explore </a> </li>
+                                <li><a href="/logout" style="color: rgb(34, 182, 34);" > Log Out</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            </form>
+
+
+    <p><h4 style="background-color: aqua;" >If You need Help just Google it or Chatgpt</h4></p>
+
+</body>
