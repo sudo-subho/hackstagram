@@ -1,3 +1,4 @@
+#Hackstagram
 Hackstagram is a social media web application developed to explore web development using Python and Django. It mimics the functionality of popular social media platforms, allowing users to connect, share, and interact through posts and profiles.
 
 # Install
@@ -6,6 +7,8 @@ Hackstagram is a social media web application developed to explore web developme
  ```python manage.py runserver```
 
  // Default username and password is admin:admin
+
+ // Admin panel link is ```http://127.0.0.1:8000/admin```
 
 # pics
 
