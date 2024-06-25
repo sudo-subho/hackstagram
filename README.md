@@ -7,11 +7,11 @@ Hackstagram is a social media web application developed to explore web developme
 
 # pics
 
-### 
+### Home
 
 ![alt text](https://github.com/sudo-subho/hackstagram/blob/main/screenshorts/Screenshot%202024-05-04%20193418.png)
 
-### 
+### profile
 
 ![alt text](https://github.com/sudo-subho/hackstagram/blob/main/screenshorts/Screenshot%202024-05-04%20193435.png)
 
